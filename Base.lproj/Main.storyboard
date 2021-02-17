@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Navigation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OF-s5-iSA">
-                                <rect key="frame" x="48" y="678" width="318" height="48"/>
+                                <rect key="frame" x="48" y="766" width="318" height="48"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="NIm-gD-uCp"/>
@@ -41,7 +41,7 @@
                             <constraint firstItem="9OF-s5-iSA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wua-u0-qnc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="nWz-aC-yTb"/>
+                    <navigationItem key="navigationItem" title="Navigation" id="nWz-aC-yTb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,11 +52,11 @@
             <objects>
                 <viewController id="qlq-Qq-1YS" customClass="GreenViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OKR-PI-MVn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqR-zJ-rs0">
-                                <rect key="frame" x="48" y="678" width="318" height="48"/>
+                                <rect key="frame" x="48" y="766" width="318" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Teh-km-eDF"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aT-cx-DgD">
-                                <rect key="frame" x="48" y="606" width="318" height="48"/>
+                                <rect key="frame" x="48" y="694" width="318" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="YFf-Zv-x4W"/>
@@ -141,29 +141,104 @@
         <!--Home-->
         <scene sceneID="xzQ-iG-CJu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLU-eL-iVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qwj-ZR-bhf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Home" id="0Hn-uI-Ph7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lyh-Zw-b04">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lyh-Zw-b04">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="linkColor"/>
                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Whx-eS-xhm"/>
+                        <segue destination="UKo-aV-Sis" kind="relationship" relationship="rootViewController" id="BBq-wh-B48"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLU-eL-iVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+            <point key="canvasLocation" x="51" y="94"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="dPS-bj-g4E">
+            <objects>
+                <viewController id="UKo-aV-Sis" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8Q-bb-SdP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-Hg-Rcx">
+                                <rect key="frame" x="48" y="766" width="318" height="48"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kBG-pC-l27"/>
+                                </constraints>
+                                <state key="normal" title="Navigation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fby-ph-5NO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkj-3Z-pF5">
+                                <rect key="frame" x="48" y="694" width="318" height="48"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bcR-9H-Mi6"/>
+                                </constraints>
+                                <state key="normal" title="Pokemón">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zpv-Eo-hcr" kind="show" id="iyb-PH-yM0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QKe-4g-1bN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QKe-4g-1bN" firstAttribute="trailing" secondItem="Pkj-3Z-pF5" secondAttribute="trailing" constant="48" id="0PH-h8-4tQ"/>
+                            <constraint firstItem="QKe-4g-1bN" firstAttribute="trailing" secondItem="9OG-Hg-Rcx" secondAttribute="trailing" constant="48" id="Dbs-o2-9yR"/>
+                            <constraint firstItem="9OG-Hg-Rcx" firstAttribute="leading" secondItem="QKe-4g-1bN" secondAttribute="leading" constant="48" id="FVl-nJ-Zth"/>
+                            <constraint firstItem="QKe-4g-1bN" firstAttribute="bottom" secondItem="9OG-Hg-Rcx" secondAttribute="bottom" constant="48" id="MoR-Qp-t1t"/>
+                            <constraint firstItem="9OG-Hg-Rcx" firstAttribute="top" secondItem="Pkj-3Z-pF5" secondAttribute="bottom" constant="48" id="dse-6h-xTm"/>
+                            <constraint firstItem="Pkj-3Z-pF5" firstAttribute="leading" secondItem="QKe-4g-1bN" secondAttribute="leading" constant="48" id="eOK-cR-460"/>
+                            <constraint firstItem="9OG-Hg-Rcx" firstAttribute="top" secondItem="Pkj-3Z-pF5" secondAttribute="bottom" constant="24" id="w1e-PP-VcQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Options" id="3ik-tu-wSP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gV-14-lVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="94"/>
+        </scene>
+        <!--Pokemón-->
+        <scene sceneID="BMP-LP-VS0">
+            <objects>
+                <viewController id="zpv-Eo-hcr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jfk-LS-gde">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qHx-Yq-Aks"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokemón" id="NqG-Le-sVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqL-ET-Gmo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="-627"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

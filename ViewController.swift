@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "greenSegue" {
-            guard let greenViewController = segue.destination as? GreenViewController else { return}
+            guard let greenViewController = segue.destination as? GreenViewController else { return }
             print(greenViewController)
             }
         }

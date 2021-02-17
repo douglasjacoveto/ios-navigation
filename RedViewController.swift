@@ -17,7 +17,7 @@ class RedViewController: UIViewController {
     }
 
     @IBAction func didSelectGreen(_ sender: Any) {
-        guard let greenViewController = navigationController?.viewControllers[1] else { return }
+        guard let greenViewController = navigationController?.viewControllers[2] else { return }
         navigationController?.popToViewController(greenViewController, animated: true)
     }
     
