@@ -159,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="51" y="94"/>
         </scene>
-        <!--Options-->
+        <!--Home-->
         <scene sceneID="dPS-bj-g4E">
             <objects>
                 <viewController id="UKo-aV-Sis" sceneMemberID="viewController">
@@ -186,7 +186,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="bcR-9H-Mi6"/>
                                 </constraints>
-                                <state key="normal" title="Pokemón">
+                                <state key="normal" title="Pokedec">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -206,7 +206,7 @@
                             <constraint firstItem="9OG-Hg-Rcx" firstAttribute="top" secondItem="Pkj-3Z-pF5" secondAttribute="bottom" constant="24" id="w1e-PP-VcQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Options" id="3ik-tu-wSP"/>
+                    <navigationItem key="navigationItem" title="Home" id="3ik-tu-wSP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gV-14-lVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
