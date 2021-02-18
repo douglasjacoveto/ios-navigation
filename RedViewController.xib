@@ -52,21 +52,37 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-eY-Uhg">
                     <rect key="frame" x="48" y="478" width="318" height="48"/>
-                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="eP5-SN-te1"/>
                     </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Present Blue">
-                        <color key="titleColor" systemColor="linkColor"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
                         <action selector="didPresentBlue:" destination="-1" eventType="touchUpInside" id="KX1-ke-xmF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wed-xh-Ug5">
+                    <rect key="frame" x="48" y="382" width="318" height="48"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="XBC-6B-3SM"/>
+                    </constraints>
+                    <state key="normal" title="Present Yellow">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="didPresentYellow:" destination="-1" eventType="touchUpInside" id="0aQ-RN-6O5"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
             <constraints>
+                <constraint firstItem="DUP-eY-Uhg" firstAttribute="top" secondItem="Wed-xh-Ug5" secondAttribute="bottom" constant="48" id="0hy-Pk-uaU"/>
+                <constraint firstItem="Wed-xh-Ug5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="1Iz-aX-mbG"/>
                 <constraint firstItem="DUP-eY-Uhg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="36P-en-xwB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pli-lT-eIs" secondAttribute="trailing" constant="48" id="4tC-On-Uzq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DUP-eY-Uhg" secondAttribute="trailing" constant="48" id="6dj-TD-guK"/>
@@ -79,12 +95,16 @@
                 <constraint firstItem="wCC-08-nAP" firstAttribute="top" secondItem="DUP-eY-Uhg" secondAttribute="bottom" constant="48" id="l5p-Vp-GE6"/>
                 <constraint firstItem="h85-rC-D8K" firstAttribute="top" secondItem="pli-lT-eIs" secondAttribute="bottom" constant="48" id="mng-dT-HP2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h85-rC-D8K" secondAttribute="bottom" constant="48" id="o8o-B6-pKY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wed-xh-Ug5" secondAttribute="trailing" constant="48" id="zJT-xI-Nrt"/>
             </constraints>
             <point key="canvasLocation" x="139" y="105"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="linkColor">
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">

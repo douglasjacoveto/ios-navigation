@@ -25,10 +25,20 @@ class RedViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func didPresentBlue(_ sender: Any) {
+    @IBAction func didPresentYellow(_ sender: Any) {
         let yellowController = YellowViewController(nibName: "YellowViewController", bundle:nil)
-        
+
         present(yellowController, animated: true, completion: nil)
+    }
+    
+    @IBAction func didPresentBlue(_ sender: Any) {
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let blueController = mainStoryBoard.instantiateViewController(identifier: "BlueViewController") as? BlueViewController else { return}
+       
+            blueController.modalTransitionStyle = .flipHorizontal
+            
+        present(blueController, animated: true, completion: nil)
+
     }
     
     @IBAction func didSelectPrevious(_ sender: Any) {
