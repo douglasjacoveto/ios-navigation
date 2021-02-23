@@ -60,10 +60,9 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     
         selectPokemon = pokemonList[indexPath.row]
-        print("pokemon selecionado \(selectPokemon)")
+//        print("pokemon selecionado \(selectPokemon)")
         performSegue(withIdentifier: "segueDetailPokemon" , sender: self)
         
     }

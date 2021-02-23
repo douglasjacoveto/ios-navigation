@@ -186,7 +186,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="bcR-9H-Mi6"/>
                                 </constraints>
-                                <state key="normal" title="Pokédex">
+                                <state key="normal" title="Pokédex - Semana 1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -199,7 +199,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="UKw-BR-H2O"/>
                                 </constraints>
-                                <state key="normal" title="List Pokemon">
+                                <state key="normal" title="List Pokémon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
