@@ -21,6 +21,8 @@ class PokemonDetailViewController: UIViewController {
         pokemonNameView.text = pokemon?.name
         pokemonImageView.image = pokemon?.image
         pokemonDescriptionView.text = pokemon?.description
+//        pokemonDescriptionView.numberOfLines = 0
+//        pokemonDescriptionView.sizeToFit()
         
 
         // Do any additional setup after loading the view.
