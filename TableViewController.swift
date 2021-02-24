@@ -17,6 +17,8 @@ class TableViewController: UITableViewController {
 
     let growlithe = Pokemon(name: "Growlithe", description: "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.", image: UIImage(named: "growlithe"))
     
+    let charmander = Pokemon(name: "Charmander", description: "I'dont know.", image: UIImage(named: "charmander"))
+    
     var selectPokemon: Pokemon?
 
     var pokemonList: [Pokemon] = []
@@ -24,7 +26,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pokemonList = [pikachu, squirtle, bulbasaur, growlithe]
+        pokemonList = [pikachu, squirtle, bulbasaur, growlithe, charmander]
 
     }
 
