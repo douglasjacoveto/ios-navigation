@@ -268,17 +268,24 @@
                                                 <constraint firstAttribute="height" constant="72" id="tL0-3y-77W"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-FC-93g">
-                                            <rect key="frame" x="94" y="29.5" width="288" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-FC-93g">
+                                            <rect key="frame" x="94" y="4" width="288" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2v-DK-k2G">
+                                            <rect key="frame" x="94" y="37" width="268" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="FU6-pA-Y0J" secondAttribute="bottom" constant="4" id="2au-Cg-UVS"/>
+                                        <constraint firstItem="dpi-FC-93g" firstAttribute="top" secondItem="FU6-pA-Y0J" secondAttribute="top" id="Jex-o7-XWQ"/>
                                         <constraint firstItem="FU6-pA-Y0J" firstAttribute="leading" secondItem="qzw-BX-NSs" secondAttribute="leading" constant="10" id="RaR-R4-Kta"/>
-                                        <constraint firstItem="dpi-FC-93g" firstAttribute="centerY" secondItem="FU6-pA-Y0J" secondAttribute="centerY" id="ZJI-G5-WY0"/>
                                         <constraint firstItem="FU6-pA-Y0J" firstAttribute="centerY" secondItem="qzw-BX-NSs" secondAttribute="centerY" id="asS-az-JrV"/>
                                         <constraint firstItem="dpi-FC-93g" firstAttribute="leading" secondItem="FU6-pA-Y0J" secondAttribute="trailing" constant="12" id="qKQ-KT-jf3"/>
                                         <constraint firstItem="FU6-pA-Y0J" firstAttribute="top" secondItem="qzw-BX-NSs" secondAttribute="top" constant="4" id="tPH-OI-Upf"/>
@@ -286,6 +293,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="pokemonDescriptionView" destination="p2v-DK-k2G" id="OAD-Nm-7bF"/>
                                     <outlet property="pokemonImageView" destination="FU6-pA-Y0J" id="ySx-ye-lIY"/>
                                     <outlet property="pokemonNameView" destination="dpi-FC-93g" id="WDg-9d-a3j"/>
                                 </connections>
